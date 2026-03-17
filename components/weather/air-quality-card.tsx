@@ -28,7 +28,7 @@ export function AirQualityCard({
           <p className="ui-text-muted mt-1 text-sm">{airQuality.category}</p>
         </div>
         <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10">
-          <Wind className="h-5 w-5 text-white/80" />
+          <Wind className="ui-icon-strong h-5 w-5" />
         </div>
       </div>
       <p className="ui-text-strong text-sm leading-6">{airQuality.label}</p>

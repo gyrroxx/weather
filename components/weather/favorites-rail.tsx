@@ -20,7 +20,7 @@ export function FavoritesRail({
           <p className="ui-text-soft text-xs uppercase tracking-[0.24em]">Saved cities</p>
           <p className="ui-text-strong mt-2 text-lg font-semibold">Favorites dock</p>
         </div>
-        <MapPinned className="h-5 w-5 text-white/70" />
+        <MapPinned className="ui-icon-muted h-5 w-5" />
       </div>
       <div className="mt-4 flex gap-3 overflow-x-auto pb-2">
         {favorites.length ? (

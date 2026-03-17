@@ -13,7 +13,7 @@ export function StatusPanel({
   return (
     <SectionCard className="flex items-center gap-4">
       <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white/10">
-        {icon ?? <WifiOff className="h-5 w-5 text-white/75" />}
+        {icon ?? <WifiOff className="ui-icon-muted h-5 w-5" />}
       </div>
       <div>
         <p className="ui-text-strong text-sm font-semibold">{title}</p>

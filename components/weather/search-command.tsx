@@ -71,7 +71,10 @@ export function SearchCommand({
           value={query}
           onFocus={() => setOpen(true)}
           onBlur={() => window.setTimeout(() => setOpen(false), 120)}
-          onChange={(event) => setQuery(event.target.value)}
+          onChange={(event) => {
+            setQuery(event.target.value);
+            setOpen(true);
+          }}
           placeholder={selectedCity ? `Switch from ${selectedCity.name}` : "Search any city in the world"}
           className="ui-text-strong w-full bg-transparent text-sm placeholder:text-[color:var(--ui-text-soft)] focus:outline-none"
         />

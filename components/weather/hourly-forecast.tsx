@@ -78,8 +78,8 @@ export function HourlyForecast({
           >
             <p className="ui-text-soft text-sm">{formatHourLabel(new Date(point.time), timezone)}</p>
             <div className="mt-4 flex items-center justify-between">
-              <WeatherIcon code={point.conditionCode} isDay={isDay} className="h-5 w-5 text-white/82" />
-              <p className="text-sm text-cyan-100">{Math.round(point.precipitationProbability)}%</p>
+              <WeatherIcon code={point.conditionCode} isDay={isDay} className="ui-icon-strong h-5 w-5" />
+              <p className="ui-accent-info text-sm">{Math.round(point.precipitationProbability)}%</p>
             </div>
             <p className="ui-text-strong mt-4 text-lg font-semibold">{formatTemperature(point.temperature)}</p>
           </div>

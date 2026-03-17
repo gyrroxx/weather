@@ -49,7 +49,7 @@ export function MetricsGrid({ current }: { current: CurrentWeather }) {
             <div className="flex items-center justify-between">
               <p className="ui-text-muted text-sm">{metric.label}</p>
               <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-white/10">
-                <Icon className="h-4 w-4 text-white/80" />
+                <Icon className="ui-icon-strong h-4 w-4" />
               </div>
             </div>
             <p className="ui-text-strong text-2xl font-semibold">{metric.format(value)}</p>
